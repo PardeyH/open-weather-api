@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^1.6.7",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3"
+  },
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "weather api project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PardeyH/open-weather-api.git"
+  },
+  "author": "pardeyh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PardeyH/open-weather-api/issues"
+  },
+  "homepage": "https://github.com/PardeyH/open-weather-api#readme"
+}
