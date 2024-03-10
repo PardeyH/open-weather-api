@@ -19,12 +19,15 @@ app.get("/", async (req, res) => {
     
     const currentData = result.data.current;
     const currentWeather = result.data.current.weather[0];
+    console.log(currentWeather);
     
     res.render("index.ejs", { 
+        currentData: currentData,
         currentTime: convertTimeFormat(currentData.dt),
-        weatherIcon: currentWeather,
+        weather: currentWeather,
         sunrise: convertTimeFormat(currentData.sunrise),
         sunset: convertTimeFormat(currentData.sunset),
+        tempFahrenheit: convertCelsiusToFahrenheit(currentData.temp),
      });
 });
 
@@ -34,4 +37,8 @@ app.listen(port, () => {
 
 function convertTimeFormat(time) {
     return new Date(time * 1000).toLocaleString();
+}
+
+function convertCelsiusToFahrenheit(temp) {
+    return (temp * 9/5) + 32;
 }
