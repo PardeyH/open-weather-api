@@ -6,9 +6,6 @@ import bodyParser from "body-parser";
 const port = 3000;
 const app = express();
 
-
-const API_url = "https://api.openweathermap.org/data/3.0/onecall?";
-
 const hamburgLat = 53.5502;
 const hamburgLon = 9.9920;
 
