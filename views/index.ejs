@@ -7,6 +7,9 @@
     <title>Weather App</title>
 </head>
 <body>
-    <h1> The weather in Hamburg is currently <%= content %>  </h1>    
-</body>
+    <h1> Date: <%= currentTime %></h1>
+    <img src="https://openweathermap.org/img/wn/<%- weatherIcon.icon %>@2x.png">
+    <p>Sunrise: <%= sunrise %></p>
+    <p>Sunset: <%= sunset %></p>
+</body> 
 </html>
